@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
+    <title>Advanced Snake Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        <div id="startScreen" class="overlay">
+            <h1>Snake Game</h1>
+            <p>Press Enter to Start</p>
+        </div>
+        <div id="gameOverScreen" class="overlay">
+            <h1>Game Over</h1>
+            <p id="finalScore"></p>
+            <p>Press Enter to Restart</p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
